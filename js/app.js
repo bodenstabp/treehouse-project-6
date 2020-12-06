@@ -63,7 +63,7 @@ qwerty.addEventListener('click', (event) => {
         chosen++
         for (let i = 0; i < hiddenPhrase.length; i++){
             if (phraseLI[i].textContent.toLowerCase() === event.target.textContent){
-                phraseLI[i].className = 'show';
+                phraseLI[i].className += ' show';
                 match = event.target.textContent;
             }
         }
