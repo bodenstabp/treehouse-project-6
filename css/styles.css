@@ -95,7 +95,7 @@ button {
 .show {
   color: #000;
   background-color: #76CE82;
-  transition: color 2s, background-color 1s;
+  transition: color 3s, background-color 1s;
 }
 
 /* Keyboard */

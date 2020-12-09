@@ -32,6 +32,7 @@ function addPhraseToDisplay (arr) {
         li.textContent = arr[i];
         if (li.textContent === ' ') {
             li.className = 'space'
+            li.style.display = 'block'
         } else {
             li.className = 'letter'
         }
