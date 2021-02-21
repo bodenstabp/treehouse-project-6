@@ -55,6 +55,16 @@ function removePhraseFromDisplay () {
     hiddenPhrase = getRandomPhraseAsArray();
 }
 
+function winLoseOverlay() {
+    if (hiddenPhrase.length === document.querySelectorAll('.show').length + document.querySelectorAll('.space').length){
+        overlay.className =('win');
+        overlay.style.display = 'flex';
+    }else if (missed === 5){
+        overlay.className =('lose');
+        overlay.style.display = 'flex';
+    }
+}
+
 //Letter Checker
 qwerty.addEventListener('click', (event) => {
     let match = null;
@@ -74,13 +84,7 @@ qwerty.addEventListener('click', (event) => {
             lives[missed-1].src = 'images/lostHeart.png';           
         }
         // Win/Lose Tracker
-        if (hiddenPhrase.length === document.querySelectorAll('.show').length + document.querySelectorAll('.space').length){
-            overlay.className =('win');
-            overlay.style.display = 'flex';
-        }else if (missed === 5){
-            overlay.className =('lose');
-            overlay.style.display = 'flex';
-        }
+        winLoseOverlay()
     }
 })
 
