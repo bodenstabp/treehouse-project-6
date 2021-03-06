@@ -27,7 +27,7 @@ body {
   flex-direction: column;
   display: flex;
   height: 100vh;
-  background-color: lightblue;
+  background-color: teal;
 }
 
 li, ol, ul {
@@ -81,7 +81,7 @@ a:hover{
 /* Title */
 
 .header {
-  color: var(--color-start);
+  color: var(--color-win);
 }
 
 /* Phrase */
