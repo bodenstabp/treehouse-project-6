@@ -172,3 +172,9 @@ a:hover{
 .lose a {
   color: var(--color-lose);
 }
+
+@media (max-width: 800px) {
+  .keyrow {
+    flex-wrap: wrap;
+  }
+}
