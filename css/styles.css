@@ -174,7 +174,11 @@ a:hover{
 }
 
 @media (max-width: 800px) {
-  .keyrow {
-    flex-wrap: wrap;
-  }
+  
+  body { height: 100%; }
+  
+  .keyrow { flex-wrap: wrap; }
+
+  .main-container { max-height: initial;}
+  
 }
